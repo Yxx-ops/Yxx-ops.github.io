@@ -1,0 +1,35 @@
+// 必须先引入Minima主题的基础样式，否则自定义样式会失效
+---
+---
+@import "minima";
+
+// 1. 修改整个页面的背景色（默认是纯白色，改成浅灰色）
+body {
+  background-color: #f5f5f5; // 柔和的浅灰，视觉更舒适
+  color: #333; // 文字颜色改成深灰，提升可读性
+}
+
+// 2. 修改标题样式（博客标题/文章标题）
+.site-title {
+  color: #2c3e50; // 深蓝色，替代默认的黑色
+  font-size: 2.5rem; // 放大标题字号
+  font-weight: 700; // 加粗
+}
+
+// 3. 修改文章内容区域的样式
+.post-content {
+  background-color: #ffffff; // 文章区域保留白色背景，和页面背景区分
+  padding: 20px; // 增加内边距，避免文字贴边
+  border-radius: 8px; // 圆角边框，更美观
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); // 轻微阴影，增加层次感
+}
+
+// 4. 修改链接样式（鼠标 hover 时变色）
+a {
+  color: #3498db; // 链接默认蓝色
+  text-decoration: none; // 去掉默认下划线
+}
+a:hover {
+  color: #e74c3c; // 鼠标移上去变成红色
+  text-decoration: underline; // hover时显示下划线
+}
